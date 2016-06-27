@@ -1,20 +1,20 @@
-<!DOCTYPE html>
-<html>
+{% include /head.html %}
+{% include /site_header.html %}
+<section class="clearfix">
+  <div class="wrapper clearfix">
+    <header>
+      <h1>{{ page.title }}</h1>
+      <h2>The Origin Of Our Name</h2>
+    </header>
+    {{ content }}
+    <footer>
+      <h3>Sources</h3>
+      <ul>
+        <li>source</li>
+      </ul>
+    </footer>
+  </div>
+</section>
+{% include site_footer.html %}
+{% include foot.html %}
 
-  {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
-  </body>
-
-</html>
