@@ -12,27 +12,10 @@
   <script src= "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
-<script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-1904163-5']);
-  _gaq.push(['_setDomainName', 'thejoshcrain.com']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 </head>
 <body>
-<?php
-   $path = $_SERVER['DOCUMENT_ROOT'];
-   $path .= "/ancestry/_includes/site_header.php";
-   include_once($path);
-?>
+{% include site_header.html %}
 <section class="clearfix">
   <nav class="paging"> <a href="/ancestry/ancestors/" class="previous">previous</a> <a href="/ancestry/ancestors/benjamin-crane/" class="next">next</a> </nav>
   <div class="wrapper clearfix">
@@ -77,10 +60,6 @@ John Crane came from Suffolk County, England, to America, and by 1637 he was liv
     </footer>
 </section>
 
-<?php
-   $path = $_SERVER['DOCUMENT_ROOT'];
-   $path .= "/ancestry/_includes/site_footer.php";
-   include_once($path);
-?>
+{% include site_footer.html %}
 </body>
 </html>
