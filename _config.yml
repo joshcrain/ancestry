@@ -1,4 +1,4 @@
 name: Ancestry
-markdown: redcarpet
-pygments: true
+markdown: kramdown
+highlighter: rouge
 baseurl: /ancestry
