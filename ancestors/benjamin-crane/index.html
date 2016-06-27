@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Benjamin Crane
 sub-title: abt. 1630 - 1691
 ---
@@ -46,7 +46,7 @@ sub-title: abt. 1630 - 1691
         
        
     </blockquote>
-    <cite>Nash, Elizabeth Todd. <em>Fifty Puritan Ancestors, 1628-1660: Genealogical Notes, 1560-1900.</em> New Haven: Tuttle, Morehouse & Taylor Company, 1902. Internet Archive. Web. 2014. Page 93.</cite></div>
+    <cite>Nash, Elizabeth Todd. <em>Fifty Puritan Ancestors, 1628-1660: Genealogical Notes, 1560-1900.</em> New Haven: Tuttle, Morehouse & Taylor Company, 1902. Internet Archive. Web. 2014. Page 93.</cite>
     <footer>
 <h3>Sources</h3>
       <ul>
@@ -54,12 +54,11 @@ sub-title: abt. 1630 - 1691
         <li>Nash, Elizabeth Todd. Fifty Puritan Ancestors, 1628-1660: Genealogical Notes, 1560-1900. New Haven: Tuttle, Morehouse & Taylor Company, 1902. Internet Archive. Web. 2014. Page 93.</li>
         <li>New-England Historic, Genealogical Society. <em>The New England Historical and Genealogical Register, Volume 27.</em> Boston, Mass.: David Clapp & Son, 1873. Internet Archive. Web. 2014. Page 77. </li>
         <li>Stiles, Henry R. <em>Families of Ancient Wethersfield, Connecticut.</em> Westminster, Maryland: Heritage Books, Inc., 2006. Internet Archive. Web. 2014. Page 254.</li>
-      </ul></div>
+      </ul>
     </footer>
-         <div id="map" class="map_canvas"></div>
 
 <script type="text/javascript">
-	
+$(function() {	
 	var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 8,
       center: new google.maps.LatLng(41.701262,-72.669428),
@@ -118,6 +117,6 @@ function showWethersfield(event) {
 
 //Info Windows Click Events
 google.maps.event.addListener(wethersfieldMarker, 'click', showWethersfield);
-
+});
 </script>
 
